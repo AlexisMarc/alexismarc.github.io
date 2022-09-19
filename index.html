@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Actividad-4</title>
+</head>
+
+<body>
+    <nav>
+        <a id="0" href="#">Calculadora</a>
+        <a id="1" href="#">Ejercicio-1</a>
+        <a id="2" href="#">Ejercicio-2</a>
+        <a id="3" href="#">Ejercicio-3</a>
+        <a id="4" href="#">Ejercicio-4</a>
+        <a id="5" href="#">Ejercicio-5</a>
+        <a id="6" href="#">Ejercicio-6</a>
+    </nav>
+    
+    <div class="container">
+        <div class="calculadora">
+            <div class="numeros">
+                <input class="total" id="total" type="submit" value="0">
+                <input type="submit" value="7" onclick="numero('7')">
+                <input type="submit" value="8" onclick="numero('8')">
+                <input type="submit" value="9" onclick="numero('9')">
+                <input type="submit" value="/" onclick="signo('/')">
+                <input type="submit" value="4" onclick="numero('4')">
+                <input type="submit" value="5" onclick="numero('5')">
+                <input type="submit" value="6" onclick="numero('6')">
+                <input type="submit" value="*" onclick="signo('*')">
+                <input type="submit" value="1" onclick="numero('1')">
+                <input type="submit" value="2" onclick="numero('2')">
+                <input type="submit" value="3" onclick="numero('3')">
+                <input type="submit" value="-" onclick="signo('-')">
+                <input type="submit" value="0" onclick="numero('0')">
+                <input type="submit" value="." onclick="numero('.')">
+                <input type="submit" value="=" onclick="calcular('=')">
+                <input type="submit" value="+" onclick="signo('+')">
+            </div>
+        </div>
+        <div class="registro">
+            <h1>Ejercicio-1</h1>
+            <label for="name">Digite su nombre:</label>
+            <input id="name" type="text" placeholder="Nombre">
+            <button id="ma" class="submit">Mayusculas</button>
+            <button id="mi" class="submit">Minusculas</button>
+            <button id="lon" class="submit">Longitud</button>
+            <button id="le" class="submit">Primera letra</button>
+        </div>
+
+        <div class="grados">
+            <h1>Ejercicio-2</h1>
+            <label for="agrados">Vas a convertir de:</label>
+            <select name="grado" id="agrados">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+            <label for="name">Digite los grados:</label>
+            <input id="grado" type="number" placeholder="Grados">
+
+            <label for="degrados">Deseas convertir a:</label>
+            <select name="grado" id="degrados">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+            <button id="calgrados" class="submit">Calcular</button>
+        </div>
+
+        <div class="triangulos">
+            <h1>Ejercicio-3</h1>
+            <label for="lado1">Digite el lado #1:</label>
+            <input id="lado1" type="number" placeholder="Lado 1">
+            <label for="lado2">Digite el lado #2:</label>
+            <input id="lado2" type="number" placeholder="Lado 2">
+            <label for="lado3">Digite el lado #3:</label>
+            <input id="lado3" type="number" placeholder="Lado 3">
+            <button id="caltriangulo" class="submit">Calcular</button>
+        </div>
+        <div class="maestros">
+            <h1>Ejercicio-4</h1>
+            <label for="nomaestro">Seleccione el nombre del instructor:</label>
+            <select name="grado" id="nomaestro">
+                <option value="A">Tatiana</option>
+                <option value="B">Adriana</option>
+                <option value="C">Luis</option>
+                <option value="D">Yaneth</option>
+                <option value="E">Fernando</option>
+                <option value="F">Jhonatan</option>
+            </select>
+            <label for="apemaestro">Seleccione el apellido del instructor:</label>
+            <select name="apemaestro" id="apemaestro">
+                <option value="A">Cabrera</option>
+                <option value="B">Duarte</option>
+                <option value="C">Baquero</option>
+                <option value="D">Castillo</option>
+                <option value="E">Galindo</option>
+                <option value="F">Espitia</option>
+            </select>
+            <label for="actmaestro">Seleccione la actividad del instructor:</label>
+            <select name="actmaestro" id="actmaestro">
+                <option value="A">Front-End Famework</option>
+                <option value="B">Diseño Front-End</option>
+                <option value="C">Cultura fisica</option>
+                <option value="D">Gestión Ambiental</option>
+                <option value="E">Desarrollo de base de datos</option>
+                <option value="F">Back-End PHP</option>
+            </select>
+            <button id="calmaestro" class="submit">Calcular</button>
+        </div>
+        <div class="figuras">
+            <h1>Ejercicio-5</h1>
+            <div class="fila">
+                <div class="cuadrado card">
+                    <h1>Cuadrado</h1>
+                    <button id="areaCuadrado" class="submit">Área</button>
+                    <button id="perimetroCuadrado" class="submit">Perimetro</button>
+                </div>
+                <div class="triangulo card">
+                    <h1>Triangulo</h1>
+                    <button id="areaCuadrado" class="submit">Área</button>
+                    <button id="perimetroTriangulo" class="submit">Perimetro</button>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="rectangulo card">
+                    <h1>Rectangulo</h1>
+                    <button id="areaCuadrado" class="submit">Área</button>
+                    <button id="perimetroRectangulo" class="submit">Perimetro</button>
+                </div>
+                <div class="circulo card">
+                    <h1>Circulo</h1>
+                    <button id="areaCuadrado" class="submit">Área</button>
+                    <button id="perimetroCirculo" class="submit">Perimetro</button>
+                </div>
+            </div>
+            <div class="modal">
+                <a id="cerrar">X</a>
+                <div class="modal-cuadrado modal-con">
+                    <h1>Perimetro Cuadrado</h1>
+                    <label for="ladc">Digite el lado:</label>
+                    <input id="ladc" type="number" placeholder="Lado">
+                    <button id="perimetrocu" class="submit">Calcular</button>
+                </div>
+                <div class="modal-triangulo modal-con">
+                    <h1>Perimetro Triangulo</h1>
+                    <label for="ladt1">Digite el lado 1:</label>
+                    <input id="ladt1" type="number" placeholder="Lado">
+                    <label for="ladt2">Digite el lado 2:</label>
+                    <input id="ladt2" type="number" placeholder="Lado">
+                    <label for="ladt3">Digite el lado 3:</label>
+                    <input id="ladt3" type="number" placeholder="Lado">
+                    <button id="perimetrot" class="submit">Calcular</button>
+                </div>
+                <div class="modal-rectangulo modal-con">
+                    <h1>Perimetro Rectangulo</h1>
+                    <label for="lad1r">Digite el lado 1:</label>
+                    <input id="lad1r" type="number" placeholder="Lado">
+                    <label for="lad2r">Digite el lado 2:</label>
+                    <input id="lad2r" type="number" placeholder="Lado">
+                    <button id="perimetror" class="submit">Calcular</button>
+                </div>
+                <div class="modal-circulo modal-con">
+                    <h1>Perimetro Circulo</h1>
+                    <label for="radio1">Digite el Radio:</label>
+                    <input id="radio" type="number" placeholder="Radio">
+                    <button id="perimetroc" class="submit">Calcular</button>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+    <script src="js/evidencia.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+
+</html>
