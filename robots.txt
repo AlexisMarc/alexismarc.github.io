@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://marcosrincon.dev
+Sitemap: https://marcosrincon.dev/sitemap.xml
