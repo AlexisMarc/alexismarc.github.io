@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
 
-Host: https://marcosrincon.dev
-Sitemap: https://marcosrincon.dev/sitemap.xml
+Host: https://alexismarc.github.io
+Sitemap: https://alexismarc.github.io/sitemap.xml
